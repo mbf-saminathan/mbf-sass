@@ -1,0 +1,89 @@
+.usual {
+    background: none repeat scroll 0 0 #767676;
+    border: 1px solid #222222;
+    color: #111111;
+    margin: 8px 0;
+    padding: 15px 20px;
+    width: 1000px;
+    float:left;
+}
+
+.usual h1{
+    color:#FFFFFF;
+}
+.usual li {
+    float: left;
+    list-style: none outside none;
+    margin-bottom: 0px !important;
+}
+.usual ul a {
+    background: none repeat scroll 0 0 #444444;
+    color: #FFFFFF;
+    display: block;
+    font: 10px Verdana;
+    margin: 1px 1px 1px 0;
+    padding: 6px 10px;
+    text-decoration: none !important;
+    font-size: 14px;
+}
+.usual ul a:hover {
+    background: none repeat scroll 0 0 #111111;
+    color: #FFFFFF;
+}
+.usual ul a.selected {
+    background: none repeat scroll 0 0 snow;
+    border-bottom: 1px solid snow;
+    color: #000000;
+    cursor: default;
+    margin-bottom: 0;
+    font-size:14px;
+}
+.usual div.tab {
+    background: none repeat scroll 0 0 snow;
+    clear: left;
+    font: 10pt Georgia;
+    padding: 40px;
+    float:left;
+    width:93%;    
+}
+.usual div a {
+    color: #000000;
+    font-weight: bold;
+}
+#usual2 {
+    background: none repeat scroll 0 0 #767676;
+    border: 1px solid #1A1A1A;
+}
+#usual2 a {
+    background: none repeat scroll 0 0 #222222;
+}
+#usual2 a:hover {
+    background: none repeat scroll 0 0 #000000;
+}
+#usual2 a.selected {
+    background: none repeat scroll 0 0 snow;
+}
+#tabs3 {
+   
+}
+.usual div.contaniner{
+    float: left;
+    width:100%;
+    padding-bottom: 20px;
+}
+.usual div.label{
+    float:left;
+    width:20%;
+}
+.usual div.field{
+    float:left;
+    width:60%;
+ }
+ .usual div.field input{
+     width: 400px; 
+ }
+ .usual div.field textarea{
+     width: 400px; 
+     height:200px;
+ }
+ 

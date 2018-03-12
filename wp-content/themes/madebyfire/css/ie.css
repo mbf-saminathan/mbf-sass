@@ -1,0 +1,4 @@
+/* IE9 and below */
+.animated { opacity:1 !important; visibility:visible !important; }
+.madeIntro .container { display: table; }
+.madeIntro .container .row { display: table-cell; vertical-align: middle; }

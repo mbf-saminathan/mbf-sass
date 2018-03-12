@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+.mapLocation {
+    background: url(../../images/map-india.png) no-repeat scroll 0 0 transparent;
+    height: 662px;
+    position: relative;
+    width: 605px;
+}
+
+a.bubble {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    color: #55544B;
+    font-size: 12px;
+    line-height: 28px;
+    padding-left: 30px;
+    position: absolute;
+    white-space: nowrap;
+	text-decoration:none !important;
+}
+
+.green {
+    background: url("../../images/map-anchor.png") no-repeat scroll left top transparent;
+}
