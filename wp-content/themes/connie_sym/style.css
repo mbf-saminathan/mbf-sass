@@ -1,0 +1,22 @@
+/*****
+Theme Name: AJ Theme
+Theme URI: 
+Author: Madebyfire team
+Author URI: http://www.madebyfire.com/
+Description: AJ Theme designed and developed by madebyfire team.
+Version: 1.0
+*****/
+.thnkclass{
+	padding-bottom: 240px;
+}
+.videoBlk
+{
+	z-index: 9999;
+}
+.insta-image{
+	width: 250px;
+	height: 250px;
+}
+.insta-topContent .insta-gallery .insta-image{
+	max-width: 100%;
+}

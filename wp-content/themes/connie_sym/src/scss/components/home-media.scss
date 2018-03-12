@@ -1,0 +1,272 @@
+@media screen and(max-width: 1140px){
+	.banner{
+		h1{
+			font-size: 80px;
+			line-height: 85px;
+		}
+		margin-bottom: 86px;
+	}
+}
+
+@media screen and(max-width: 768px){
+	[class*="col-"]{
+		max-width:100%;
+		flex: 0 0 auto;
+		} 
+		h1{
+			font-size: 68px;
+		}
+		.section{
+		   padding-bottom:75px;
+		   &:not(first-child):before{
+				content:"";
+				position: absolute;
+				background:$white;
+				height: 1px;
+				bottom: 25px;
+				left: -10px;
+			    bottom: 25px;
+			    right: -10px;
+			}
+			&:nth-child(2):before{
+				bottom: 85px;
+			}
+		}
+		
+	.banner{
+		h1{
+			font-size: 90px;
+		    line-height: 98px;
+		    width: 100%;
+		}
+		&-content{
+			padding:0px;
+			bottom:80px;
+			.arrow-img{
+				width:85px;
+			}
+		}
+		&:after{
+			 @include animation(none);
+		    height: 60px !important;
+    		bottom: -30px !important;
+    		background-color: $chartreuse-yellow;
+		}
+	}
+	.about{
+		&-section{
+			ul{
+				display: none;
+			}
+		.row{
+			flex-direction: column-reverse;
+			}
+
+		}
+		&-content{
+			background-color: transparent;
+			&-block{
+				width:100%;
+				background: #c3c4bc;
+				padding: 155px 15px 48px 15px !important;
+			}
+			.about-image{
+				margin: -122px 0px;
+			}
+		}
+	}
+ 	.starting{
+ 		&-section{
+ 			padding-bottom:114px;
+ 			margin:0px;
+ 			.book-image{
+			    transform: translateX(-13%);
+			    z-index: 9;
+			    bottom:-400px;
+			}
+			&:after{
+				display: none;
+			}
+ 		}
+ 		&-topContent{
+ 			&:before{
+ 				display:none;
+ 			}
+ 			.about-content-block{
+			    padding-top: 400px !important;
+				border-bottom: 10px solid $chartreuse-yellow;
+			}
+ 		} 	
+ 	}
+
+ 	.reciepe{
+ 		&-section{
+ 			.row-top{
+ 				margin-top:-56px;
+ 			}
+ 		}
+ 		&-topContent{
+			margin: -155px -15px 0px -15px;
+			border-bottom: 10px solid $chartreuse-yellow;
+			padding:42px 0px 55px;
+ 			&:before{
+ 				display:none;
+ 			}
+ 			.content-center{
+ 				text-align: left;
+ 				padding: 0px 15px;
+ 			}
+ 		} 	
+ 	}
+ 	.beauty{
+ 		&-section{
+ 			&:after{
+				display: none;
+			}
+ 		}
+		&-topContent{
+			margin: -22px -15px;
+			display: block;
+			padding: 20px 15px;
+			border-bottom: 10px solid $chartreuse-yellow;;
+			.row{
+				flex-direction: column-reverse;
+				padding:25px 15px;
+				&-first{
+					padding-bottom: 20px;
+				}
+			}
+			&:before{
+ 				display:none;
+ 			}
+ 			.beauty-content{
+ 				padding: 0px;
+ 			}
+		}	
+	}
+	.client{
+		&-content{
+			margin-bottom:0px;
+		}
+	}
+	.fitness{
+ 		&-section{
+ 			&:after{
+				display: none;
+			}
+ 		}
+ 	}
+    
+ 	.insta{
+ 		&-topContent{
+ 			margin: 0px -15px;
+ 			padding:50px 15px;
+ 			&:before{
+ 				display:none;
+ 			}
+ 			&:after{
+				display: none;
+			}
+ 		}
+ 		&-gallery{
+ 			padding:50px 0px !important;
+ 			display: -webkit-box;
+		    display: -webkit-flex;
+		    display: -ms-flexbox;
+		    display: flex;
+		    flex:0 0 1;
+ 			.insta-image{
+ 				padding:0px !important;
+		   }
+ 		}
+ 	}
+ 	.slick-track{
+		img{
+			width:250px !important;
+		}
+ 	}
+ 	.card{
+ 		margin-bottom:20px;
+ 	}
+ 	.content-center{
+		text-align: left;
+		padding:0px 15px;
+	}
+	.tab-show{
+		display: block;
+	}
+	.desktop-view{
+		display: none;
+	}
+	.button-secondary{
+		margin-left: 15px;
+	}
+}
+
+@media screen and(max-width: 670px){
+	.banner{
+		h1{
+			font-size: 68px;
+		    line-height: 70px;
+		}
+		&-content{
+			padding: 0px 15px;
+			 width: 100%;
+			 bottom:60px;
+		}
+	}
+	.button-more{
+		margin-left: 15px;
+	}
+	.about{
+		&-section{
+			margin-bottom:60px; 
+
+		}
+	}
+}
+
+@media screen and(max-width: 580px){
+	.starting{
+ 		&-section{
+ 			.book-image{
+ 				 bottom:-300px;
+ 			}
+ 			.about-content-block{
+			    padding-top: 300px !important;
+			}
+ 		}
+ 	}
+}
+@media screen and(max-width: 460px){
+	.starting{
+ 		&-section{
+ 			.book-image{
+ 				 bottom:-245px;
+ 			}
+ 			.about-content-block{
+			    padding-top: 220px !important;
+			}
+ 		}
+	}
+}
+
+@media screen and(max-width: 360px){
+	.about{
+		&-section{
+			margin-bottom:0px; 
+
+		}
+	}
+	.starting{
+ 		&-section{
+ 			.book-image{
+ 				 bottom:-220px;
+ 			}
+ 			.about-content-block{
+			    padding-top: 220px !important;
+			}
+ 		}
+	}
+
+}

@@ -1,0 +1,25 @@
+<?php 
+/*****
+Includes
+*****/
+include('includes/contact_list.php');
+include('includes/theme_option.php');
+include('includes/pagination.php');
+/********
+Post Type
+********/
+include('posttypes/banners.php');
+/*include('posttypes/news.php');
+include('posttypes/testimonials.php');*/
+include('posttypes/fitness.php');
+include('posttypes/beauty.php');
+include('posttypes/recipe.php');
+include('posttypes/articles.php');
+/******
+Metaboxes
+******/
+include('metaboxes/related_link.php');
+include('metaboxes/common_metabox.php');
+include('metaboxes/shortcodes.php');
+include('metaboxes/testimonial_metabox.php');
+?>

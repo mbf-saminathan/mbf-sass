@@ -1,0 +1,153 @@
+header{
+	position: absolute;
+	z-index:9;
+	width:100%;
+	padding:35px 0px;
+	ul{
+		float: left;
+		width:50%;
+		li{
+			display: inline-block;
+			padding: 0px 20px;
+			a{
+			  color:$white;
+                  &:hover, &:active{
+                        text-decoration:none;
+                        color:$chartreuse-yellow;
+                   }
+			}
+		}
+	}
+	.nav-left{
+		text-align: right;
+		padding-right: 130px;
+	}
+	.nav-right{
+		text-align: left;
+		padding-left: 130px;
+	}
+}
+
+.logo{
+    width:220px;
+	position: absolute;
+	left:50%;
+	@include transform(translateX(-50%));
+}
+.menu-close{
+    display: none!important;
+    @include position(absolute, $right: 0px, $top: 0px);
+    padding: 15px 25px;
+    color: $chartreuse-yellow!important;
+    i{        
+        font-size: 34px;
+        -webkit-text-stroke: 5px $menuBg;
+    }
+}
+
+@media screen and(max-width: 1140px) { 
+	header{
+        padding:20px 0px;
+		ul{
+			float: none;
+			width:100%;
+		}
+		.nav-left, .nav-right{
+			text-align:left;
+		}
+	} 
+	.menu-toggle{
+		cursor: pointer;
+		display: inline-block;
+		float: right;
+		margin-left: 20px;
+		padding: 6px 8px;
+		width: 42px;
+		@include position(absolute, $right: 15px, $top: 30px);
+		background: transparent;
+	} 
+  .menu-close{
+    	display: block!important;
+    }
+  .hamBurger{
+        background-color:$chartreuse-yellow;
+        margin: 4px auto;
+        backface-visibility: hidden;
+        @include transition-duration(0.3s);
+        @include width-height(100%, 3px);
+  }
+   .menu-open {
+        background-color:$menuBg;
+        overflow-y: auto;
+        z-index: 100;
+        @include position(fixed, $top: 0px, $right: -270px, $bottom: null, $left: null);
+        @include width-height(270px, 100%);
+        @include transition-duration(0.5s);
+        padding-top: 50px;
+        &.slide {
+            right: 0;
+        }
+        nav {
+            padding: 100px 0px;
+            text-align: left;
+        }
+        ul {
+            padding: 0px;
+        }
+        li {
+            border-bottom: 1px solid #5d5d5d;
+            display: block;
+            list-style: none;        
+            &:last-child {
+                border-bottom: 1px solid #5d5d5d;
+            }       
+            a, .noLink{
+                color: $chartreuse-yellow; 
+                display: block;
+                padding: 20px 30px; 
+                @include transition-duration(0.5s); 
+            }        
+            &:hover{
+                ul{
+                    display: none;  
+                    @include transform(inherit);              
+                }
+            }
+            ul{
+                background-color: #1d1c1c;
+                padding:0px;
+                opacity: 1;
+                position: static;
+                visibility:visible;
+                @include border-radius(0px);
+                @include transform(inherit);
+                @include transition(inherit);
+                &:before{
+                    display:none;
+                }
+               
+                a{
+                   padding: 20px 30px;
+                }
+            }
+        }
+    }
+
+  	.logo{
+		position: relative;
+		left:0;
+		padding-left: 15px;
+		img{
+			width:250px;
+		}
+  	}
+}
+
+@media screen and(max-width: 360px){
+    .logo{
+        img{
+            width:180px;
+        }
+    }
+
+}

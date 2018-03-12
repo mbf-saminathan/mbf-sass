@@ -1,0 +1,168 @@
+@media screen and(max-width: 1140px){
+	.sub-header{
+		li{
+			&:hover{
+				background:transparent;
+				a{
+					color:$chartreuse-yellow;
+				}
+			}
+		}
+	}
+	.sub-menu{
+		text-align: left !important;
+	}
+}
+
+@media screen and(max-width: 768px){
+	.mobile-heading{
+		background: $subBg;
+		padding: 20px 15px 0px;
+		h6{
+			color:$white;
+		}
+	}
+	.sub-banner{
+		margin-bottom: 115px;
+		max-height:230px; 
+		.subpage-banner{
+			 top:30px;
+		}
+	}
+	.menu-list{
+		padding-bottom:100px;
+		li{
+		    border-top: 1px solid $subBg;
+		    margin: 0px -15px;
+		    cursor: pointer;
+		    &:last-child{
+		    	border-bottom: 1px solid $subBg;
+		    }
+		    a{
+		    	padding: 20px 15px;
+		    	color:$smoky;
+		    	display: block;
+		    	text-decoration: none;
+		    	&:after{
+			    	content: "\F105";
+				    font-family: "fontawesome";
+				    color: $smoky;
+				    right: 20px;
+				    position: absolute;
+				    font-size: 22px;
+			    }
+		    }
+		}
+	}
+	.menu-card{
+		display: none;
+	}
+	.generic{
+		padding-bottom:15px;
+		p{
+			padding-bottom: 10px;
+		}
+		ul{
+			padding:15px 20px 20px;
+		}
+		.middle-banner{
+			p{
+				padding:15px;
+			}
+		}
+		.padding-row{
+			padding: 20px 15px;
+		}
+		[class*="col-10"]{
+			padding: 30px 15px;
+
+		}
+		&-img1{
+			margin-bottom: 10px;
+		}
+		.accordion{
+	        padding: 37px 0px 50px 0px;
+		}
+		&-paddingLeft{
+			padding-left:0px;
+			img{
+				width: 60%;
+				left:23%;
+			}
+		}
+		.book-image{
+			z-index: 99;
+		}
+	}
+	.about-section{
+		margin-bottom:90px;
+	}
+	.share{
+		li{
+			display: inline-block;
+		}
+	}
+	.side-bar{
+		ul{
+			padding: 0px;
+		}
+	}
+}
+
+@media screen and(max-width: 560px){
+	.sub-banner{
+		max-height:155px; 
+	}
+	.generic{
+		&-paddingLeft{
+			padding-left:0px;
+			img{
+				width:100%;
+				left:0%;
+			}
+		}
+	}
+}
+
+@media screen and(max-width: 460px){
+	.sub-banner{
+		max-height:100px; 
+	}
+	.generic-startSection{
+		.about-content-block{
+			padding-top: 305px !important;
+		}
+	}
+}
+
+@media screen and(max-width: 360px){
+	.sub-banner{
+			max-height:75px; 
+		}	
+
+   .generic-pagination {
+	padding: 20px 0px 80px;
+	li {
+		line-height:14px;
+		&:first-child, &:last-child {
+			a {
+				line-height:14px;
+				&:hover, &.active {
+					@include width-height(30px, 30px);
+					line-height:12px;
+					
+				}
+			}
+		}
+	}
+	a {
+		@include width-height(30px, 30px);
+		line-height:14px;
+			&:hover, &.active {
+				@include width-height(30px, 30px);
+				line-height:13px;
+			}
+		}
+	}
+
+}

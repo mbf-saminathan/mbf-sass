@@ -1,9 +1,0 @@
-#postdiv.postarea, #postdivrich.postarea { margin:0; }
-#post-status-info { line-height:1.4em; font-size:13px; }
-#custom_editor .inside { margin:2px 6px 6px 6px; }
-#ed_toolbar { display:none; }
-#postdiv #ed_toolbar, #postdivrich #ed_toolbar { display:block; }
-
-#shortcodes_table tr:nth-child(-n+12) {
-display: none !important;
-}

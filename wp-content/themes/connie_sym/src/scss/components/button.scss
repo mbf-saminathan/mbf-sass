@@ -1,0 +1,79 @@
+.button, button{
+    background-color: transparent;
+    border: 2px solid $primaryButton;
+    color: $primaryButton;
+    cursor: pointer;
+    display: inline-block;
+    @include single-transition(all, 0.25s, linear);
+    font: {
+        family: $font-quicksandBold;
+        size: $font-xs1;
+    };
+    letter-spacing: 2px;
+    max-width: 240px;
+    padding: 10px 20px;
+    text-align:center;
+    text-decoration: none!important;
+    text-transform: uppercase;
+    width: 100%;
+    @include border-radius(0px);
+    &:hover, &:focus{
+        border-color: $primaryButtonHover;
+        color: $primaryButtonHover;
+    }
+    &-primary{
+        background-color: transparent;
+        border-color:$chartreuse-yellow;
+        color: $chartreuse-yellow;
+        a{
+            color: $chartreuse-yellow;
+        }
+        &:hover, &:focus{
+            background-color:transparent;
+            border-color: $smoky;
+            a{
+                color: $smoky;
+            }
+        }
+    }
+    &-secondary{
+        color:$smoky;
+        border: 2px solid $smoky;
+        display: block;
+        margin:25px auto; 
+        &:hover, &:focus{
+            background-color:transparent;
+            border-color: $black;
+            color: $black;
+        }
+        a{
+             color: $smoky;
+        }
+    }
+    a{
+        text-decoration: none;
+    }
+}
+
+.button{
+    &-link{
+        font-family: $font-quicksandBold;
+        font-size:$font-sm;
+        text-transform: uppercase;
+        letter-spacing:3px;
+        color:$smoky;
+        margin: 0 auto;
+        display: block;
+        &:hover{
+            text-decoration: none;
+            color:$primaryButton;
+        }
+    }
+}
+
+@media screen and(max-width: 640px){
+    .button, button{
+        font-size: 12px;
+        max-width: 190px;
+    }
+}
